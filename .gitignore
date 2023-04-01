@@ -1,0 +1,16 @@
+# Ignorar directorios y archivos específicos
+node_modules/
+logs/
+dist/
+
+# Ignorar archivos específicos
+.env
+.DS_Store
+*.log
+
+# Ignorar directorios de IDE
+.vscode/
+
+# Archivos generados por el proyecto
+/public/build/
+/db/database.db
