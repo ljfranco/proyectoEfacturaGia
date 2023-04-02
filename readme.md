@@ -6,8 +6,8 @@ A continuación, se presenta la descripción del proyecto para la creación de u
 
 Funcionalidades
 
-Carga de archivos XML de facturas electrónicas
-Generación de archivos CSV para importarlos al sistema contable
+//TODO - Carga de archivos XML de facturas electrónicas
+//TODO - Generación de archivos CSV para importarlos al sistema contable
 Creación de equivalencias entre los productos de la empresa y los productos de las facturas
 Guardado de información de proveedores y productos en una base de datos SQLite
 

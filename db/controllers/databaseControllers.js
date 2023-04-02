@@ -65,10 +65,37 @@ function addProductNS(req, res) {
     })
 }
 
+function getProviders(req, res) {
+    db.all('SELECT * FROM proveedores', function (err, rows) {
+        if (err) {
+            return console.error(err.message);
+        }
+        res.send(rows);
+    });
+}
+
+function getProductsequivalent(req, res) {
+    db.all('SELECT * FROM productos_proveedor', function (err, rows) {
+        if (err) {
+            return console.error(err.message);
+        }
+        res.send(rows);
+    });
+}
+
+function getProductsNS(req, res) {
+    db.all('SELECT * FROM productosNS', function (err, rows) {
+        if (err) {
+            return console.error(err.message);
+        }
+        res.send(rows);
+    });
+}
 
 
 
 
 
 
-module.exports = { addProvider, addProductequivalent, addProductNS };
+
+module.exports = { addProvider, addProductequivalent, addProductNS, getProviders, getProductsequivalent, getProductsNS };
